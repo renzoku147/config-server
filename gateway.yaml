@@ -13,20 +13,23 @@ spring:
 
   cloud:
     gateway:
-      discovery.locator:    #A           
+      discovery.locator:              
           enabled: true           
           lowerCaseServiceId: true
       routes:
-#      - id: ms-profile
-#        uri: lb://ms-profile
-#        predicates:
-#        - Path=/api/ms-profile/**
-#        filters:         
-#        - RewritePath=/ms-profile/(?<path>.*), /$\{path}
+      routes:
+      - id: id-ms-profile
+        uri: lb://ms-profile
+        predicates:
+        - Path=/ms-profile/**
+        filters:         
+        - RewritePath=/ms-profile/(?<path>.*), /$\{path}
         
-#      - id: albums
-#        uri: https://jsonplaceholder.typicode.com/albums
-#        predicates:
+      - id: albums
+        uri: https://jsonplaceholder.typicode.com/albums
+        predicates:
+        - Path=/albums
+      
 #        - Path=/albums
         
 # Activacion de endpoints         
