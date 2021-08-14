@@ -24,7 +24,7 @@ spring:
         predicates:
         - Path=/ms-profile/**
         filters:         
-        - RewritePath=/(?<path>.*), /$\{path}
+        - RewritePath=/ms-profile/(?<path>.*), /$\{path}
         
       - id: albums
         uri: https://jsonplaceholder.typicode.com/albums
