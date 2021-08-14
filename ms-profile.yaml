@@ -1,6 +1,8 @@
 server:  
   port: ${PORT:0}
-  
+  servlet:
+    context-path: /ms-profile
+    
   error:    
     include-message: always
 
