@@ -17,17 +17,17 @@ spring:
           enabled: true           
           lowerCaseServiceId: true
       routes:
-      - id: ms-profile
-        uri: lb://ms-profile
-        predicates:
-        - Path=/api/ms-profile/**
-        filters:         
-        - RewritePath=/ms-profile/(?<path>.*), /$\{path}
+#      - id: ms-profile
+#        uri: lb://ms-profile
+#        predicates:
+#        - Path=/api/ms-profile/**
+#        filters:         
+#        - RewritePath=/ms-profile/(?<path>.*), /$\{path}
         
-      - id: albums
-        uri: https://jsonplaceholder.typicode.com/albums
-        predicates:
-        - Path=/albums
+#      - id: albums
+#        uri: https://jsonplaceholder.typicode.com/albums
+#        predicates:
+#        - Path=/albums
         
 # Activacion de endpoints         
 management:
