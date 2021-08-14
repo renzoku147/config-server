@@ -17,7 +17,6 @@ spring:
           enabled: true           
           lowerCaseServiceId: true
       routes:
-      routes:
       - id: id-ms-profile
         uri: lb://ms-profile
         predicates:
