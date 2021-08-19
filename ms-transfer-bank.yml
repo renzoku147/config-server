@@ -1,7 +1,5 @@
 server:  
   port: ${PORT:0}
-  servlet:
-    context-path: /transfer
     
   error:    
     include-message: always
