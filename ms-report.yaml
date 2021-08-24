@@ -23,7 +23,7 @@ spring:
     mongodb:
       host: host.docker.internal
       port: 27017
-      database: ms-reports
+      database: ms-report
       repositories:
         enabled: true
         
