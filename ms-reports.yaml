@@ -30,7 +30,5 @@ spring:
   autoconfigure:
     exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
     
-config:
-  base:
-    test:
-      hola-mundo
+key:
+ name: hello word
